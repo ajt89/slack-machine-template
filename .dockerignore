@@ -1,0 +1,11 @@
+
+.vscode
+.venv
+.gitignore
+Dockerfile
+*.md
+k8s
+docs
+.env
+*.txt
+!requirements.txt

@@ -1,0 +1,22 @@
+
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: slack-machine-template
+  labels: {app: slack-machine-template}
+spec:
+  replicas: 1
+  template:
+    metadata: {labels: {app: slack-machine-template}}
+    spec:
+      containers:
+      - name: slack-machine-template
+        image: ajt89/slack-machine-template:active
+        ports:
+          - containerPort: 8080
+        env:
+          - name: SLACK_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: slack-machine-template-secret
+                key: SLACK_TOKEN

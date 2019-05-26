@@ -1,0 +1,63 @@
+Direct Message (no mention):
+{
+	'rtm_client': < slack.rtm.client.RTMClient object at 0x7ff84c418ef0 > ,
+	'web_client': < slack.web.client.WebClient object at 0x7ff84638b5f8 > ,
+	'data': {
+		'client_msg_id': 'f99ffeb2-ada2-41b8-af4c-f8e4bddfd0bd',
+		'suppress_notification': False,
+		'text': 'direct message',
+		'user': 'UBGCK7PPS',
+		'team': 'TBGSF03QU',
+		'channel': 'DK2CJCX7Z',
+		'event_ts': '1558903705.004300',
+		'ts': '1558903705.004300'
+	}
+}
+
+Direct Message (with mention):
+{
+	'rtm_client': < slack.rtm.client.RTMClient object at 0x7f44dfe06ef0 > ,
+	'web_client': < slack.web.client.WebClient object at 0x7f44da7ddef0 > ,
+	'data': {
+		'client_msg_id': 'd6514c22-d4b1-4b2b-872b-d368990123c0',
+		'suppress_notification': False,
+		'text': '<@UK2NKUJFQ> direct message',
+		'user': 'UBGCK7PPS',
+		'team': 'TBGSF03QU',
+		'channel': 'DK2CJCX7Z',
+		'event_ts': '1558903954.005000',
+		'ts': '1558903954.005000'
+	}
+}
+
+Channel Message (no mention):
+{
+	'rtm_client': < slack.rtm.client.RTMClient object at 0x7f44dfe06ef0 > ,
+	'web_client': < slack.web.client.WebClient object at 0x7f44da7dda90 > ,
+	'data': {
+		'client_msg_id': '53863bb5-27d4-4c0f-bbdb-66e691cff416',
+		'suppress_notification': False,
+		'text': 'channel message',
+		'user': 'UBGCK7PPS',
+		'team': 'TBGSF03QU',
+		'channel': 'CBH3K0VDY',
+		'event_ts': '1558903824.003800',
+		'ts': '1558903824.003800'
+	}
+}
+
+Channel Message (mention):
+{
+	'rtm_client': < slack.rtm.client.RTMClient object at 0x7f44dfe06ef0 > ,
+	'web_client': < slack.web.client.WebClient object at 0x7f44da7dde48 > ,
+	'data': {
+		'client_msg_id': '8a82d6dd-1a74-4d85-bc5d-504e11f06641',
+		'suppress_notification': False,
+		'text': '<@UK2NKUJFQ> channel message',
+		'user': 'UBGCK7PPS',
+		'team': 'TBGSF03QU',
+		'channel': 'CBH3K0VDY',
+		'event_ts': '1558903852.004000',
+		'ts': '1558903852.004000'
+	}
+}

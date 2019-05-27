@@ -1,1 +1,3 @@
 SLACK_TOKEN=token-here
+TAG=active
+DOCKER_HOST=ajt89

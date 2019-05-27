@@ -21,7 +21,10 @@ format:
 	black .
 
 docker-build:
-	- docker build -t ajt89/slack-machine-template:active .
+	- docker build -t $(DOCKER_HOST)/slack-machine-template:$(TAG) .
 
 docker-run:
-	- docker run --rm -e SLACK_TOKEN=$(SLACK_TOKEN) ajt89/slack-machine-template:active
+	- docker run --rm -e SLACK_TOKEN=$(SLACK_TOKEN) $(DOCKER_HOST)/slack-machine-template:$(TAG)
+
+docker-push:
+	- docker push $(DOCKER_HOST)/slack-machine-template:$(TAG)

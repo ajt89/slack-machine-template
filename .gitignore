@@ -132,3 +132,6 @@ dmypy.json
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+
+### Kubernetes ###
+k8s/secret.yaml

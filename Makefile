@@ -10,7 +10,7 @@ install:
 	pip install -r requirements-dev.txt
 
 update:
-	. .venv/bin/activate; \
+	- . .venv/bin/activate; \
 	pip install -r requirements-dev.txt
 
 run:
@@ -18,6 +18,7 @@ run:
 	slack-machine
 
 format:
+	- . .venv/bin/activate; \
 	black .
 
 docker-build:

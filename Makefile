@@ -5,7 +5,7 @@ clean:
 	- rm -rf .venv
 
 install:
-	- python3.7 -m venv .venv; \
+	- python3 -m venv .venv; \
 	. .venv/bin/activate; \
 	pip install -r requirements-dev.txt
 
